@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // 指定要调试的源码类型
+            "type": "node",
+            "request": "launch",
+            // 调试代码的名称
+            "name": "启动webpack调试程序",
+            // 指定要启动代码的入口文件
+            "program": "${workspaceRoot}/debug/start.js",
+            // 输出
+            "console": "integratedTerminal",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "sourceMaps": true,
+            "outFiles": [
+                "${workspaceRoot}/debug/dist/**/*.js"
+            ]
+        }
+    ]
+}
