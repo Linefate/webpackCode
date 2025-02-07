@@ -14,6 +14,13 @@ module.exports = {
 	output: {
 		path: path.join(__dirname, "./dist")
 	},
+	// 优化
+	optimization: {
+		// 收集标记没有使用但是导出了的模块，用来minimize进行 Tree Shaking
+		usedExports: true,
+		// 压缩代码，这里才会去除deadCode
+		minimize: true
+	},
 	// 配置loader
 	module: {
 		rules: [

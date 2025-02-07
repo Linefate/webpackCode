@@ -47,7 +47,10 @@ module.exports = [
 			"examples/**/*.js",
 			"examples/**/*.mjs",
 			"!examples/*/webpack.config.js"
-		]
+		],
+		parserOptions: {
+			sourceType: "module"
+		}
 	},
 	{
 		...js.configs.recommended,
