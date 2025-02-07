@@ -20,3 +20,4 @@
 .eslintcache
 .cspellcache
 package-lock.json
+/debug/node_modules
