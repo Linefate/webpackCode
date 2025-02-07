@@ -1,3 +1,2 @@
-/*! For license information please see main.js.LICENSE.txt */
-(()=>{"use strict";var e={d:(o,t)=>{for(var r in t)e.o(t,r)&&!e.o(o,r)&&Object.defineProperty(o,r,{enumerable:!0,get:t[r]})},o:(e,o)=>Object.prototype.hasOwnProperty.call(e,o),r:e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})}},o={};e.r(o),e.d(o,{noUse:()=>t}),console.log("很高兴认识你，webpack");const t="我是一个不会被使用的变量"})();
+(()=>{var t={850:(t,r,e)=>{t.exports="function"==typeof Object.is?Object.is:e(852)},852:t=>{t.exports=function(t,r){return t===r?0!==t||1/t==1/r:t!=t&&r!=r}}},r={};function e(o){var s=r[o];if(void 0!==s)return s.exports;var n=r[o]={exports:{}};return t[o](n,n.exports,e),n.exports}(()=>{"use strict";e(850),console.log("很高兴认识你，webpack")})()})();
 //# sourceMappingURL=main.js.map
