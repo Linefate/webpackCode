@@ -4,7 +4,7 @@
   "description": "> [webpack 源码调试](https://juejin.cn/post/6948949388899123236)",
   "main": "start.js",
   "scripts": {
-    "start": "rm -rf dist && node start.js"
+    "build": "rm -rf dist && node start.js"
   },
   "author": "",
   "license": "ISC",
@@ -12,5 +12,5 @@
     "dayjs": "^1.11.13",
     "lodash-es": "^4.17.21",
     "object.is": "^1.0.0"
-  }
+  } 
 }

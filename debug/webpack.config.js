@@ -1,19 +1,14 @@
 // 导入node中内置的path模块
 const path = require("path");
-// 导出webpack配置
-module.exports = {
+
+// 创建基础配置
+const baseConfig = {
 	// 当前debug目录
 	context: __dirname,
-	// development模式
-	mode: "production",
 	// 配置source-map
 	devtool: "source-map",
 	// 入口文件设置为src文件下的index.js
 	entry: "./src/index.js",
-	// 出口文件在debug文件夹下dist文件夹
-	output: {
-		path: path.join(__dirname, "./dist")
-	},
 	// 优化
 	optimization: {
 		/**
@@ -58,3 +53,25 @@ module.exports = {
 		]
 	}
 };
+
+// 导出配置数组
+module.exports = [
+	// development模式配置
+	{
+		...baseConfig,
+		mode: "development",
+		output: {
+			path: path.join(__dirname, "./dist"),
+			filename: "development.[name].js"
+		}
+	},
+	// production模式配置
+	{
+		...baseConfig,
+		mode: "production",
+		output: {
+			path: path.join(__dirname, "./dist"),
+			filename: "production.[name].js"
+		}
+	}
+];

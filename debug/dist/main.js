@@ -1,2 +1,0 @@
-(()=>{var t={850:(t,r,e)=>{t.exports="function"==typeof Object.is?Object.is:e(852)},852:t=>{t.exports=function(t,r){return t===r?0!==t||1/t==1/r:t!=t&&r!=r}}},r={};function e(o){var s=r[o];if(void 0!==s)return s.exports;var n=r[o]={exports:{}};return t[o](n,n.exports,e),n.exports}(()=>{"use strict";e(850),console.log("很高兴认识你，webpack")})()})();
-//# sourceMappingURL=main.js.map
