@@ -4,7 +4,11 @@
   "description": "> [webpack 源码调试](https://juejin.cn/post/6948949388899123236)",
   "main": "start.js",
   "scripts": {
-    "build": "rm -rf dist && node start.js"
+    "clean": "rm -rf dist",
+    "build": "npm run clean && node start.js",
+    "build:dev": "npm run clean && WEBPACK_BUILD=development node start.js",
+    "build:prod": "npm run clean && WEBPACK_BUILD=production node start.js",
+    "build:all": "npm run clean && node start.js"
   },
   "author": "",
   "license": "ISC",
