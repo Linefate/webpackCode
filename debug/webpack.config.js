@@ -84,11 +84,14 @@ const productionConfig = {
 // 根据环境变量导出配置
 module.exports = env => {
 	if (env.WEBPACK_BUILD === "development") {
-		return [developmentConfig];
+		// 开发环境
+		// 返回的是对象：则webpack创建的compiler是创建的使用Compiler实例
+		return developmentConfig;
 	}
 	if (env.WEBPACK_BUILD === "production") {
-		return [productionConfig];
+		return productionConfig;
 	}
 	// 默认两种模式都构建
+	// 返回的是数组配置：则webpack创建的compiler是MultiCompiler实例
 	return [developmentConfig, productionConfig];
 };
