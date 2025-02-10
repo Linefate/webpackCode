@@ -3,7 +3,7 @@ const webpack = require("../lib/index.js");
 // 引入上面写的webpack配置对象
 const config = require("./webpack.config");
 // 创建一个compiler对象
-
+debugger;
 // 传入环境变量
 const compiler = webpack(config({ WEBPACK_BUILD: process.env.WEBPACK_BUILD }));
 

@@ -21,7 +21,8 @@
             // 添加环境变量
             "env": {
                 "WEBPACK_BUILD": "development"
-            }
+            },
+            "preLaunchTask": "clean-dist"
         }
     ]
 }
