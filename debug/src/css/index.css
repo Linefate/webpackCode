@@ -1,0 +1,7 @@
+/* index.css 中定义了body的背景色 */
+/* 以及通过@import 语句引入了 ./require.css */
+@import url("./require.css");
+
+body {
+	color: red;
+}

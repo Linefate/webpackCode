@@ -1,6 +1,9 @@
 // 导入node中内置的path模块
 const path = require("path");
 
+// 导入html-webpack-plugin插件
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+
 // 创建基础配置
 const baseConfig = {
 	// 当前debug目录
@@ -17,9 +20,21 @@ const baseConfig = {
 				test: /\.js$/,
 				use: ["babel-loader"],
 				exclude: /node_modules/
+			},
+			{
+				test: /\.css$/,
+				use: [
+					"style-loader", // 将 JS 字符串转换为 style 节点
+					"css-loader" // 将 CSS 转换为 CommonJS 模块
+				]
 			}
 		]
-	}
+	},
+	plugins: [
+		new HtmlWebpackPlugin({
+			template: "./src/index.html"
+		})
+	]
 };
 
 // 创建开发环境配置

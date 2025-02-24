@@ -13,8 +13,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "css-loader": "^7.1.2",
     "dayjs": "^1.11.13",
+    "html-webpack-plugin": "^5.6.3",
     "lodash-es": "^4.17.21",
-    "object.is": "^1.0.0"
-  } 
+    "object.is": "^1.0.0",
+    "style-loader": "^4.0.0"
+  }
 }
