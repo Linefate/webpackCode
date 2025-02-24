@@ -67,12 +67,37 @@ pnpm install
 minimize: true;
 ```
 
-
 ## 3.环境变量
 
 ```bash
 build:dev: WEBPACK_BUILD=development node start.js
 build:prod: WEBPACK_BUILD=production node start.js
 ```
-1. 在start.js里可以直接使用process.env.WEBPACK_BUILD
-2. 
+
+1. 在start.js里可以直接使用process.env.WEBPACK_BUILD的值，因为`start.js`是node执行的，是在node.js的环境中运行，所以可以
+   直接访问Nodejs的process.env
+2. 在index.js是打包后再浏览器中运行的，浏览器环境没有process.env
+
+#### webpack环境变量处理
+
+> 要在浏览器代码中使用环境变量，需要通过webpack的`DefinePlugin`插件来处理
+
+```js
+new webpack.DefinePlugin({
+	"process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV)
+});
+```
+
+##### 工作原理
+
+1. 在构建过程中，webpack会使用`DefinePlugin`插件将环境变量替换为具体的值
+2. 在浏览器中运行的代码中，环境变量会被替换为具体的值
+
+```js
+// 在构建过程中，webpack会使用DefinePlugin插件将环境变量替换为具体的值
+// 在浏览器中运行的代码中，环境变量会被替换为具体的值
+console.log(process.env.NODE_ENV);
+```
+
+todo：
+看DefinePlugin源码
