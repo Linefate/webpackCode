@@ -2,6 +2,8 @@
 
 > [webpack 源码调试](https://juejin.cn/post/6948949388899123236)
 
+> node: 20.0.0
+
 ## 1. 安装依赖
 
 ```bash
