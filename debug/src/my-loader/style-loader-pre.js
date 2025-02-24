@@ -1,7 +1,7 @@
 // normal阶段
 function myStyleLoader(source) {
 	console.log("🙌 1️⃣【pre-myStyleLoader normal】 阶段执行", source);
-	return "我是1️⃣pre-loader normal 返回的结果";
+	return source;
 }
 
 // pitch阶段

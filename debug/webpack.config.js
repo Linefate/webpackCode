@@ -27,7 +27,7 @@ const baseConfig = {
 					"./src/my-loader/style-loader-post",
 					"./src/my-loader/style-loader",
 					"./src/my-loader/style-loader-pre",
-					// "css-loader" // 将 CSS 转换为 CommonJS 模块
+					"css-loader" // 将 CSS 转换为 CommonJS 模块
 				]
 			}
 		]
