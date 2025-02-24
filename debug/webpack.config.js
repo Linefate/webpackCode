@@ -13,8 +13,15 @@ const baseConfig = {
 	devtool: "source-map",
 	// 入口文件设置为src文件下的index.js
 	entry: "./src/index.js",
-
-	// 配置loader
+	// 配置本地loader别名
+	resolveLoader: {
+		alias: {
+			"my-style-loader": path.resolve(
+				__dirname,
+				"src/my-loader/style-loader.js"
+			)
+		}
+	},
 	module: {
 		rules: [
 			{
@@ -26,7 +33,13 @@ const baseConfig = {
 				test: /\.css$/,
 				use: [
 					// "style-loader", // 将 JS 字符串转换为 style 节点
-					"./src/my-loader/style-loader", // 使用相对路径
+					//
+					// 本地loader 引入方法1：使用绝对路径
+					// path.resolve(__dirname, "src/my-loader/style-loader"),
+					// 本地loader 引入方法2：使用相对路径
+					// "./src/my-loader/style-loader", // 使用相对路径
+					// 本地loader 引入方法3：使用resolveLoader
+					"my-style-loader",
 					"css-loader" // 将 CSS 转换为 CommonJS 模块
 				]
 			}
