@@ -1,6 +1,7 @@
 // normal阶段
 function myStyleLoader(source) {
-	console.log("🙌【myStyleLoader normal】 阶段执行", source);
+	console.log("🙌 2️⃣【myStyleLoader normal】 阶段执行", source);
+	return source;
 	// 如果pitch阶段执行了，且返回了非undefined值，则会跳过当前的normal阶段（👿这个方法不会执行）
 	// 如果执行这里，那么source，是前置loader normal阶段返回的结果，也就是css-loader返回的结果
 	// css-loader返回的结果是 js模块化的代码，也就是将css转换为js模块（esModule）
@@ -35,7 +36,7 @@ function myStyleLoader(source) {
 
 // pitch阶段
 myStyleLoader.pitch = function (remainingRequest) {
-	console.log("🙌【myStyleLoader pitch】 阶段执行", remainingRequest);
+	console.log("🙌 2️⃣【myStyleLoader pitch】 阶段执行", remainingRequest);
 	// 👇🏻👇🏻inline-loader
 	//remainingRequest是： /Users/qianqian/qianqianfile/domore/webpackCode/debug/node_modules/.pnpm/css-loader@7.1.2_webpack@5.98.0/node_modules/css-loader/dist/cjs.js!/Users/qianqian/qianqianfile/domore/webpackCode/debug/src/css/index.css
 	// webpack递归编译style-loader返回脚本中的import语句时，

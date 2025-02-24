@@ -3,7 +3,6 @@ const path = require("path");
 
 // 导入html-webpack-plugin插件
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MyStyleLoader = require("./src/my-loader/style-loader");
 
 // 创建基础配置
 const baseConfig = {
@@ -25,9 +24,10 @@ const baseConfig = {
 			{
 				test: /\.css$/,
 				use: [
-					// "style-loader", // 将 JS 字符串转换为 style 节点
-					"./src/my-loader/style-loader", // 使用相对路径
-					"css-loader" // 将 CSS 转换为 CommonJS 模块
+					"./src/my-loader/style-loader-post",
+					"./src/my-loader/style-loader",
+					"./src/my-loader/style-loader-pre",
+					// "css-loader" // 将 CSS 转换为 CommonJS 模块
 				]
 			}
 		]
