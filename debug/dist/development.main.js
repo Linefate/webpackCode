@@ -1,42 +1,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./node_modules/.pnpm/css-loader@7.1.2_webpack@5.98.0/node_modules/css-loader/dist/cjs.js!./src/css/index.css":
-/*!********************************************************************************************************************!*\
-  !*** ./node_modules/.pnpm/css-loader@7.1.2_webpack@5.98.0/node_modules/css-loader/dist/cjs.js!./src/css/index.css ***!
-  \********************************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_pnpm_css_loader_7_1_2_webpack_5_98_0_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/.pnpm/css-loader@7.1.2_webpack@5.98.0/node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/.pnpm/css-loader@7.1.2_webpack@5.98.0/node_modules/css-loader/dist/runtime/sourceMaps.js");
-/* harmony import */ var _node_modules_pnpm_css_loader_7_1_2_webpack_5_98_0_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_pnpm_css_loader_7_1_2_webpack_5_98_0_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_pnpm_css_loader_7_1_2_webpack_5_98_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/.pnpm/css-loader@7.1.2_webpack@5.98.0/node_modules/css-loader/dist/runtime/api.js */ "./node_modules/.pnpm/css-loader@7.1.2_webpack@5.98.0/node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_pnpm_css_loader_7_1_2_webpack_5_98_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_pnpm_css_loader_7_1_2_webpack_5_98_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_pnpm_css_loader_7_1_2_webpack_5_98_0_node_modules_css_loader_dist_cjs_js_require_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! -!../../node_modules/.pnpm/css-loader@7.1.2_webpack@5.98.0/node_modules/css-loader/dist/cjs.js!./require.css */ "./node_modules/.pnpm/css-loader@7.1.2_webpack@5.98.0/node_modules/css-loader/dist/cjs.js!./src/css/require.css");
-// Imports
-
-
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_pnpm_css_loader_7_1_2_webpack_5_98_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_pnpm_css_loader_7_1_2_webpack_5_98_0_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-___CSS_LOADER_EXPORT___.i(_node_modules_pnpm_css_loader_7_1_2_webpack_5_98_0_node_modules_css_loader_dist_cjs_js_require_css__WEBPACK_IMPORTED_MODULE_2__["default"]);
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, `/* index.css 中定义了body的背景色 */
-/* 以及通过@import 语句引入了 ./require.css */
-
-body {
-	color: red;
-}
-`, "",{"version":3,"sources":["webpack://./src/css/index.css"],"names":[],"mappings":"AAAA,2BAA2B;AAC3B,oCAAoC;;AAGpC;CACC,UAAU;AACX","sourcesContent":["/* index.css 中定义了body的背景色 */\n/* 以及通过@import 语句引入了 ./require.css */\n@import url(\"./require.css\");\n\nbody {\n\tcolor: red;\n}\n"],"sourceRoot":""}]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
 /***/ "./node_modules/.pnpm/css-loader@7.1.2_webpack@5.98.0/node_modules/css-loader/dist/cjs.js!./src/css/require.css":
 /*!**********************************************************************************************************************!*\
   !*** ./node_modules/.pnpm/css-loader@7.1.2_webpack@5.98.0/node_modules/css-loader/dist/cjs.js!./src/css/require.css ***!
@@ -226,13 +190,49 @@ module.exports = is
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Users_qianqian_qianqianfile_domore_webpackCode_debug_node_modules_pnpm_css_loader_7_1_2_webpack_5_98_0_node_modules_css_loader_dist_cjs_js_Users_qianqian_qianqianfile_domore_webpackCode_debug_src_css_index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !!./node_modules/.pnpm/css-loader@7.1.2_webpack@5.98.0/node_modules/css-loader/dist/cjs.js!./src/css/index.css */ "./node_modules/.pnpm/css-loader@7.1.2_webpack@5.98.0/node_modules/css-loader/dist/cjs.js!./src/css/index.css");
+/* harmony import */ var _Users_qianqian_qianqianfile_domore_webpackCode_debug_src_my_loader_style_loader_pre_js_Users_qianqian_qianqianfile_domore_webpackCode_debug_node_modules_pnpm_css_loader_7_1_2_webpack_5_98_0_node_modules_css_loader_dist_cjs_js_Users_qianqian_qianqianfile_domore_webpackCode_debug_src_css_index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !!./src/my-loader/style-loader-pre.js!./node_modules/.pnpm/css-loader@7.1.2_webpack@5.98.0/node_modules/css-loader/dist/cjs.js!./src/css/index.css */ "./src/my-loader/style-loader-pre.js!./node_modules/.pnpm/css-loader@7.1.2_webpack@5.98.0/node_modules/css-loader/dist/cjs.js!./src/css/index.css");
 
     
     const styleEl = document.createElement('style')
-    styleEl.innerHTML = _Users_qianqian_qianqianfile_domore_webpackCode_debug_node_modules_pnpm_css_loader_7_1_2_webpack_5_98_0_node_modules_css_loader_dist_cjs_js_Users_qianqian_qianqianfile_domore_webpackCode_debug_src_css_index_css__WEBPACK_IMPORTED_MODULE_0__["default"]
+    styleEl.innerHTML = _Users_qianqian_qianqianfile_domore_webpackCode_debug_src_my_loader_style_loader_pre_js_Users_qianqian_qianqianfile_domore_webpackCode_debug_node_modules_pnpm_css_loader_7_1_2_webpack_5_98_0_node_modules_css_loader_dist_cjs_js_Users_qianqian_qianqianfile_domore_webpackCode_debug_src_css_index_css__WEBPACK_IMPORTED_MODULE_0__["default"]
     document.head.appendChild(styleEl)
   
+
+/***/ }),
+
+/***/ "./src/my-loader/style-loader-pre.js!./node_modules/.pnpm/css-loader@7.1.2_webpack@5.98.0/node_modules/css-loader/dist/cjs.js!./src/css/index.css":
+/*!********************************************************************************************************************************************************!*\
+  !*** ./src/my-loader/style-loader-pre.js!./node_modules/.pnpm/css-loader@7.1.2_webpack@5.98.0/node_modules/css-loader/dist/cjs.js!./src/css/index.css ***!
+  \********************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_pnpm_css_loader_7_1_2_webpack_5_98_0_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/.pnpm/css-loader@7.1.2_webpack@5.98.0/node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/.pnpm/css-loader@7.1.2_webpack@5.98.0/node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_pnpm_css_loader_7_1_2_webpack_5_98_0_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_pnpm_css_loader_7_1_2_webpack_5_98_0_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_pnpm_css_loader_7_1_2_webpack_5_98_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/.pnpm/css-loader@7.1.2_webpack@5.98.0/node_modules/css-loader/dist/runtime/api.js */ "./node_modules/.pnpm/css-loader@7.1.2_webpack@5.98.0/node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_pnpm_css_loader_7_1_2_webpack_5_98_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_pnpm_css_loader_7_1_2_webpack_5_98_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_pnpm_css_loader_7_1_2_webpack_5_98_0_node_modules_css_loader_dist_cjs_js_require_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! -!../../node_modules/.pnpm/css-loader@7.1.2_webpack@5.98.0/node_modules/css-loader/dist/cjs.js!./require.css */ "./node_modules/.pnpm/css-loader@7.1.2_webpack@5.98.0/node_modules/css-loader/dist/cjs.js!./src/css/require.css");
+// Imports
+
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_pnpm_css_loader_7_1_2_webpack_5_98_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_pnpm_css_loader_7_1_2_webpack_5_98_0_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+___CSS_LOADER_EXPORT___.i(_node_modules_pnpm_css_loader_7_1_2_webpack_5_98_0_node_modules_css_loader_dist_cjs_js_require_css__WEBPACK_IMPORTED_MODULE_2__["default"]);
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `/* index.css 中定义了body的背景色 */
+/* 以及通过@import 语句引入了 ./require.css */
+
+body {
+	color: red;
+}
+`, "",{"version":3,"sources":["webpack://./src/css/index.css"],"names":[],"mappings":"AAAA,2BAA2B;AAC3B,oCAAoC;;AAGpC;CACC,UAAU;AACX","sourcesContent":["/* index.css 中定义了body的背景色 */\n/* 以及通过@import 语句引入了 ./require.css */\n@import url(\"./require.css\");\n\nbody {\n\tcolor: red;\n}\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
 
 /***/ }),
 

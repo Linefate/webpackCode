@@ -3,7 +3,6 @@ const path = require("path");
 
 // 导入html-webpack-plugin插件
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MyStyleLoader = require("./src/my-loader/style-loader");
 
 // 创建基础配置
 const baseConfig = {
@@ -13,15 +12,15 @@ const baseConfig = {
 	devtool: "source-map",
 	// 入口文件设置为src文件下的index.js
 	entry: "./src/index.js",
-	// 配置本地loader别名
-	resolveLoader: {
-		alias: {
-			"my-style-loader": path.resolve(
-				__dirname,
-				"src/my-loader/style-loader.js"
-			)
-		}
-	},
+	// // 配置本地loader别名
+	// resolveLoader: {
+	// 	alias: {
+	// 		"my-style-loader": path.resolve(
+	// 			__dirname,
+	// 			"src/my-loader/style-loader.js"
+	// 		)
+	// 	}
+	// },
 	module: {
 		rules: [
 			{
@@ -39,7 +38,10 @@ const baseConfig = {
 					// 本地loader 引入方法2：使用相对路径
 					// "./src/my-loader/style-loader", // 使用相对路径
 					// 本地loader 引入方法3：使用resolveLoader
-					"my-style-loader",
+					// "my-style-loader",
+					"./src/my-loader/style-loader-post",
+					"./src/my-loader/style-loader",
+					"./src/my-loader/style-loader-pre",
 					"css-loader" // 将 CSS 转换为 CommonJS 模块
 				]
 			}
