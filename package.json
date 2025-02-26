@@ -188,5 +188,10 @@
       "node node_modules/prettier/bin/prettier.cjs --cache --write --ignore-unknown",
       "cspell --cache --no-must-find-files"
     ]
+  },
+  "pnpm": {
+    "overrides": {
+      "loader-runner": "file:./loader-runner-debug"
+    }
   }
 }
